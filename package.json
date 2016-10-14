@@ -1,0 +1,62 @@
+{
+  "name": "angular2-typescript-webpack",
+  "version": "1.0.0",
+  "description": "Angular 2 with TypeScript and Webpack",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf dist",
+    "start": "webpack-dev-server --config webpack.dev.config.js --inline --progress --port 3000",
+    "build": "rimraf dist && webpack --config webpack.prod.config.js --progress --profile --bail",
+    "lint": "tslint \"src/**/*.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Angular 2",
+    "Typescript",
+    "Webpack"
+  ],
+  "author": "roel barreto <greatcodeideas@gmail.com>",
+  "repository": {
+    "url": "https://github.com/ipiz/angular2-typescript-webpack.git",
+    "type": "git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@angular/common": "^2.1.0",
+    "@angular/compiler": "^2.1.0",
+    "@angular/core": "^2.1.0",
+    "@angular/forms": "^2.1.0",
+    "@angular/http": "^2.1.0",
+    "@angular/platform-browser": "^2.1.0",
+    "@angular/platform-browser-dynamic": "^2.1.0",
+    "@angular/router": "^3.1.0",
+    "core-js": "^2.4.1",
+    "rxjs": "^5.0.0-beta.12",
+    "zone.js": "^0.6.25"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.34",
+    "@types/jasmine": "^2.5.35",
+    "@types/node": "^6.0.45",
+    "angular2-router-loader": "^0.3.2",
+    "angular2-template-loader": "^0.5.0",
+    "awesome-typescript-loader": "^2.2.4",
+    "codelyzer": "^1.0.0-beta.2",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
+    "html-webpack-plugin": "^2.22.0",
+    "path": "^0.12.7",
+    "raw-loader": "^0.5.1",
+    "reflect-metadata": "^0.1.8",
+    "rimraf": "^2.5.4",
+    "style-loader": "^0.13.1",
+    "ts-loader": "^0.9.1",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.3",
+    "typings": "^1.4.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
